@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mushu@2005}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-keep you password}
       POSTGRES_DB: ${POSTGRES_DB:-site_intelligence}
     ports:
       - "5432:5432"
@@ -30,7 +30,7 @@ services:
     environment:
       - POSTGRES_SERVER=db
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-mushu@2005}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-keep your password}
       - POSTGRES_DB=${POSTGRES_DB:-site_intelligence}
       - POSTGRES_PORT=5432
     depends_on:
